@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "target": "esnext",                         // Specify ECMAScript target version
+    "module": "commonjs",                       // Specify module code generation
+    "lib": ["esnext", "dom"],                   // Specify library files to include
+    "strict": true,                             // Enable all strict type-checking options
+    "esModuleInterop": true,                    // Enables emit interoperability between CommonJS and ES Modules
+    "skipLibCheck": true,                       // Skip type checking of declaration files
+    "forceConsistentCasingInFileNames": true,  // Disallow inconsistently-cased references to the same file
+    "baseUrl": ".",                             // Base directory to resolve non-relative module names
+    "paths": {
+      "*": ["node_modules/*", "src/types/*"]  // Customize paths if needed
+    }
+  },
+  "extends": "expo/tsconfig.base",
+  "include": [
+    "src/**/*"                                  // Adjust this according to your project structure
+  ],
+  "exclude": [
+    "node_modules",                             // Exclude node_modules
+    "**/*.spec.ts"                              // Exclude test files if applicable
+  ]
+}
